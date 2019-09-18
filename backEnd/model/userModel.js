@@ -4,7 +4,7 @@
  * Purpose          : Model contains the schema for database as mongodb is without
  *                    schema and the data received from the service is put in the 
  *                    schema and that schema variable's model is saved in the 
- *                    MONGO DATABASE .
+ *                    MONGO DATABASE . for jenkins
  * 
  * @file            : model.js
  * @author          : Purushottam
