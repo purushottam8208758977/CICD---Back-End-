@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
  * @description - You will need a new schema for chatting because,new
  *                now we need a new collection in our database for messages .
  * 
- *                schema ---> model ---> instance of model ---> document ---> many documents ---> one collection   
+ *                schema ---> model ---> new  instance of model ---> document ---> many documents ---> one collection   
 
  */
 const messageChatSchema = mongoose.Schema({//schema is a class in mongoose framework
