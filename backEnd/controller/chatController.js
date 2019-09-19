@@ -12,7 +12,7 @@
 
 const chattingService = require('../services/chatService.js')
 
-exports.sendMessageController = (req) => {
+exports.sendMessageController = (req,callback) => {
     try {
 
         console.log("\n\nin send message controller ... ");
@@ -34,10 +34,10 @@ exports.sendMessageController = (req) => {
         chattingService.sendMessageService(chattingData, (err, data) => {
 
             if (err) {
-                return err
+                return callback(err);
             }
             else {
-                 return data;
+                 return callback(null,data);
               }
 
         })
