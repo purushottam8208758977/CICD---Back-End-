@@ -4,10 +4,10 @@ const mongoose = require('mongoose');
 //mongoose.chats.createIndex({"x":1},{unique:true})
 
 /**
- * @description - You will need a new schema for chatting because,new
+ * @description - You will need a new schema for chatting because,
  *                now we need a new collection in our database for messages .
  * 
- *                schema ---> model ---> new  instance of model ---> document ---> many documents ---> one collection   
+ *                schema ---> model ---> instance of model ---> document ---> many documents ---> one collection   
 
  */
 const messageChatSchema = mongoose.Schema({//schema is a class in mongoose framework
@@ -70,7 +70,7 @@ module.exports = {
                 }
                 else {
                     console.log("\n\nMessage sent succesfully !")
-                    return callback(null, { message: " Message sent succesfully !", data })
+                    return callback(null,  data )
                 }
             })
         } catch (error) {
