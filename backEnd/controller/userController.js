@@ -152,6 +152,7 @@ class UserController {
                     }
                     else {
                         response.success = true;
+                        response.message="LOGGED IN SUCCESSFULLY !  .....( PURUSHOTTAM )";
                         response.result = data;
 
                         return res.status(200).send(response); //200 is ok status response code
