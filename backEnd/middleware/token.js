@@ -5,7 +5,7 @@ module.exports = {
 
     generateToken(payload) {
         
-        let token = jwt.sign(payload, process.env.UNIQUE_KEY, { expiresIn: '24h' }) //combines the unique id and the private key 
+        let token = jwt.sign(payload, "puru1234", { expiresIn: '24h' }) //combines the unique id and the private key 
 
         let object = {
             success: true,
@@ -24,7 +24,7 @@ module.exports = {
         console.log("\n\n\tToken in verify token method :",token);
         
         if (token) {
-            jwt.verify(token, process.env.UNIQUE_KEY, (err, data) => {
+            jwt.verify(token,"puru1234", (err, data) => {
                 if (err) {
 
                     res.status(400).send(err)
