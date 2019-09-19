@@ -2,7 +2,7 @@
  * Execution        : 1. default node       cmd> nodemon service.js
  * 
  * Purpose          : Request's set data from the controller is being received in 
- *                    the service and then sent forward to the model  .
+ *                    the service and then sent forward to the model  ....
  * 
  * @file            : service.js
  * @author          : Purushottam
