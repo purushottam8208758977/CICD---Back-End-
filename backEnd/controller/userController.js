@@ -167,7 +167,7 @@ class UserController {
 
     }
 
-    forgetPassword = (req, res) => {
+    forgetPassword (req, res)  {
 
         try {
 
@@ -233,7 +233,7 @@ class UserController {
 
     }
 
-    resetPassword = (req, res) => {
+    resetPassword  (req, res) {
 
         try {
             console.log('Reset password body ', req.token._id);
@@ -302,7 +302,7 @@ class UserController {
 
     }
 
-    allUsersController = (req, res) => {
+    allUsersController (req, res)  {
         try {
             /**
             * @description - Data succesfully passed on to service .
