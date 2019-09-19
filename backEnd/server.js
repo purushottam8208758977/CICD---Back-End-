@@ -72,7 +72,7 @@ io.on('connection', (socket) => { //connection is the server side event occured 
                 return err;
             }
             else {
-                io.emit(messageData.receiverId, messageData) // broadcast the event so that front end can receive it
+                io.emit("messageContent", messageData) // broadcast the event so that front end can receive it
             }
 
         })
