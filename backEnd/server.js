@@ -29,7 +29,7 @@ const validator = require('express-validator')
 
 require('dotenv').config()
 
-app.use(express.static('../frontEnd'));
+app.use(express.static('../../CICD-FrontEnd/frontEnd'));
 app.use(bodyParser.json());
 app.use(validator());
 app.use('/', route)
