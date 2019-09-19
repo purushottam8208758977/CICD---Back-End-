@@ -191,7 +191,7 @@ const generateToken = require('../middleware/token.js')
                                 } else { // password match
                                     if (bycryptResult) {
     
-                                        console.log("\n\n\t LOGGED IN SUCCESFULLY  ...  !")
+                                        console.log("\n\n\t LOGGED IN SUCCESFULLY  ...  !( PURUSHOTTAM )")
     
                                         let loginObject = {
                                             message: "LOGGED IN SUCCESSFULLY !",
