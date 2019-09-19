@@ -20,6 +20,7 @@ const importedSocket = require('socket.io')
 
 const controllerForChatting = require('../backEnd/controller/chatController.js')
 
+const PORT =4000;
 
 
 const dbConfig = require('./config/database')
@@ -39,7 +40,7 @@ app.use('/', route)
 /**
  * @description - Connection with the database is set through mongoose framework
  */
-mongoose.connect(dbConfig.url, { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb://127.0.0.1:27017/AllChat', { useNewUrlParser: true }, (err) => {
     if (err) {
         console.log("connection failed", err)
     } else {
@@ -52,8 +53,8 @@ mongoose.connect(dbConfig.url, { useNewUrlParser: true }, (err) => {
  * @description - An event is emitted or listened when PORT is turned on
  */
 
-const forSocket = app.listen(process.env.PORT, () => { //socket and server should be on the same port
-    console.log(`\n\n\n\tServer is running on Port : ${process.env.PORT}`);
+const forSocket = app.listen(PORT, () => { //socket and server should be on the same port
+    console.log(`\n\n\n\tServer is running on Port : ${PORT}`);
 
 })
 
