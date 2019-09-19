@@ -204,11 +204,11 @@ const generateToken = require('../middleware/token.js')
     
                                         //return callback(null, data + "          LOGGED IN SUCCESFULLY !")
     
-                                        return callback(null, loginObject);
+                                        return callback(null, "LOGGED IN SUCCESFULLY  ...  !( PURUSHOTTAM )",loginObject);
                                     } else {
                                         console.log("\n\n\tCREDENTIALS DONT MATCH !");
     
-                                        return callback(null, bycryptResult)
+                                        return callback(null,"CREDENTIALS DONT MATCH ! ( PURUSHOTTAM )",bycryptResult)
     
                                     }
                                 }
