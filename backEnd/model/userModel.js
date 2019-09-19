@@ -136,7 +136,7 @@ const generateToken = require('../middleware/token.js')
                                             return callback(err);
                                         } else {
     
-                                            return callback(null, { message: 'Registration succesfull !', data }); //successfull calback
+                                            return callback(null, { message: 'Registration succesfull ! (PURUSHOTTAM !)', data }); //successfull calback
                                         }
                                     })
                                 }
