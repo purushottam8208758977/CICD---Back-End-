@@ -1,7 +1,7 @@
 /*************************************************************************
  * Execution        : 1. default node       cmd> nodemon server.js
  * 
- * Purpose          : Serves acts as the entry point of the backend
+ * Purpose          : Serves acts as the entry point of the backend...
  * 
  * @file            : server.js
  * @author          : Purushottam
