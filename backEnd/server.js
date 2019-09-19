@@ -24,7 +24,7 @@ const controllerForChatting = require('../backEnd/controller/chatController.js')
 
 const dbConfig = require('./config/database')
 const validator = require('express-validator')
-//const cors=require('cors')                        cors is and alternative for static , used when login by facebook/twitter etc
+//const cors=require('cors')                   cors is and alternative for static , used when login by facebook/twitter etc
 
 require('dotenv').config()
 

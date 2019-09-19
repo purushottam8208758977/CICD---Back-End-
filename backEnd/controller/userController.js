@@ -22,7 +22,7 @@ class UserController {
  * @description - A request is controlled properly , if request has a error
  *                a response is sent.
  */
-    register = (req, res) => {
+    register  (req, res)  {
         try {
 
             req.checkBody('firstName', 'first name should not be empty').notEmpty();
@@ -97,7 +97,7 @@ class UserController {
 
     }
 
-    login = (req, res) => {
+    login (req, res)  {
 
         try {
 
