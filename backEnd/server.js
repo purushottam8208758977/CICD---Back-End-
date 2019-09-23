@@ -58,7 +58,7 @@ const forSocket = app.listen(PORT, () => { //socket and server should be on the 
 
 })
 
-const io = importedSocket(forSocket) //now socket.io uses this 'forSocket' instance to listen the particular PORT
+const io = importedSocket(forSocket) //now socket.io uses this'forSocket' instance to listen the particular PORT
 
 io.on('connection', (socket) => { //connection is the server side event occured and using the .on method connection is established
     console.log("\n\n\t\tSOCKET CONNECTED ! ")
