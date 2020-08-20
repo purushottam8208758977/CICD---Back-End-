@@ -9,7 +9,7 @@
     "@angular/material": "^8.2.0",
     "angularjs-toaster": "^3.0.0",
     "arraylist": "^0.1.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "date-and-time": "^0.9.0",
